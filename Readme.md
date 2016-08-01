@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sakaev Alexander](https://up.htmlacademy.ru/htmlcss/14/user/194741).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/id5608).
 
 ---
 

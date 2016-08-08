@@ -5,8 +5,156 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+  <header class="main-header">
+  	<div class="conatiner">
+  		<a href="index.html">
+  			<img src="http://placehold.it/137x70.png" width="137" height="70" alt="main-page">
+  		</a>
+  		<nav class="main-navigation">
+  			<ul>
+            <li>
+              <a href="#">ИНФОРМАЦИЯ</a>
+            </li>
+            <li>
+              <a href="#">ФОТО И ВИДЕО</a>
+            </li>
+            <li>
+              <a href="#">КАРТА ШТАТА</a>
+            </li>
+            <li>
+              <a href="#">ГОСТИНИЦЫ</a>
+            </li>
+			</ul>
+  		</nav>
+  	</div>
+  </header>
+  <main>
+  	<div class="intro-img">
+  		<img src="http://placehold.it/1200x773.jpg" width="1200" height="773" alt="welcome-sedona">
+  	</div>
+  	<div class="abot-main-title">
+  		<h1>Седона — небольшой городок в Аризоне, 
+заслуживающий большего!</h1>
+ 	<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+  	</div>
+  	
+<!--  	about top-->
+  	<div class="about-top">
+  		<div class="about-title left">
+			<h2>НАСТОЯЩИЙ ГОРОДОК
+			<span>— №1 —</span>
+			</h2>
+			<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+  		</div>
+        <div class="about-image right">
+        	<img src="http://placehold.it/800x256.jpg" width="800" height="256" alt="sedona-city">
+        </div>
+	  </div> 
+	  
+<!--	  features  -->
+	  <div class="features">
+	  	<div class="features-item">
+	  		<i class="feature-item-image"></i>
+	  		<b>Жилье</b>
+	  		<p>Рекомендуем пожить в настоящем 
+	  		мотеле, все как в кино!</p>
+	  	</div>
+	  	<div class="features-item">
+	  		<i class="feature-item-image"></i>
+	  		<b>ЕДА</b>
+	  		<p>Всегда заказывайте фирменный бургер,
+			вы не разочаруетесь!</p>
+	  	</div>
+	  	<div class="features-item">
+	  		<i class="feature-item-image"></i>
+	  		<b>Сувениры</b>
+	  		<p>Не только китайского,
+	  		 но и местного производства!</p>
+	  	</div>
+	  </div>
+	  
+<!--	  about middle-->
+	 <div class="about-middle">
+	    <div class="about-image left">
+        	<img src="http://placehold.it/800x256.jpg" width="800" height="256" alt="sedona-city">
+        </div>
+	  	<div class="about-title rigth">
+			<h2>Там есть
+			мост дьявола
+			<span>— №2 —</span>
+			</h2>
+			<p>Да, по нему можно пройти! Если конечно
+			 вы осмелитесь
+			</p>
+  		</div>
+  	</div>
+  	<!--	  about down-->	
+  	<div class="about-down">
+  		<div class="about-title">
+			<h2>НЕБОЛЬШАЯ ПЛОЩАДЬ
+			<span>— №3 —</span>
+			</h2>
+			<p>Все достопримечательности 
+			находятся очень близко</p>
+  		</div>
+  		<div class="about-title">
+			<h2>КРАСИВАЯ ДОРОГА
+			<span>— №4 —</span>
+			</h2>
+			<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем 
+			НЕ СКУЧНО!</p>
+  		</div>
+  		<div class="about-title">
+			<h2>МАЛО ТУРИСТОВ
+			<span>— №5 —</span>
+			</h2>
+			<p>Большинство едет в гранд каньон и
+			 толпится там</p>
+  		</div>
+    </div>
+<!--    search-->
+     <section class="hotel-search">
+     	<div class="hotel-search-title">
+     		<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+     		<p>Укажите предполагаемые даты поездки, 
+и мы покажем вам лучшие предложения гостиниц в седоне</p>
+     	</div>
+     	<div class="hotel-search-map"></div>
+		 
+     	<form class="hotel-search-form" action="#" method="post">
+     	<div><h3>ПОИСК ГОСТИНИЦЫ В Седоне</h3></div>
+     	<fieldset>
+     		<legend></legend>
+     		<label>Дата заезда:
+     		<input type="date" name="arrive-date" value="24 Апреля 2016">
+     		</label>
+     		<label>Дата выезда:
+     		<input type="date" name="arrive-date" value="4 Июля 2016">
+     		</label>
+     		<label>Взрослые:
+     			<input type="number" name="number-adults" min="1" max="30" >
+     		</label>
+     		<label>Дети:
+     			<input type="number" name="number-kids" min="0" max="30" >
+     		</label>
+     		<input type="submit" name="search" value="Найти">
+     	</fieldset>
+     </form>
+     </section>
+    </main>
+    <footer>
+    	<div class="tag">
+    		<span>#visitsedona</span>
+    	</div>
+    	<div class="social">
+    		<a href="#" class="social-item"><i></i></a>
+    		<a href="#" class="social-item"><i></i></a>
+    		<a href="#" class="social-item"><i></i></a>
+    	</div>
+    	 <div class="footer-copyright">
+          <img src="http://placehold.png">
+        </div>
+    </footer>
 
   </body>
 </html>

@@ -1,17 +1,174 @@
 body {
-	font-family: "PT Sans","Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 21 px;
 	color: 333333;
 }
-h1{
+
+h1 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	color: #333333;
 }
+
 h2 {
 	font-size: 21px;
 	font-weight: bold;
 	color: #ffffff;
+}
+
+
+/*
+=================================================
+-------------------LOYOUT------------------------=================================================
+*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	position: relative;
+	max-width: 1200px;
+	min-width: 768px;
+	padding: 0;
+	margin: 0px auto;
+	text-transform: uppercase;
+	background-color: #fff;
+	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.to-left {
+	float: left;
+}
+
+.to-right {
+	float: right;
+}
+
+
+/*----------------------header----------------------*/
+
+.main-navigation-list {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+
+.main-navigation-list a {
+	/*	background-color: aqua;*/
+	width: 20%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/*-------------------------main-----------------------*/
+
+
+/*<Почему 50% не выставляет по центру?>*/
+
+.logo-top {
+	position: absolute;
+	left: 50%;
+	z-index: 2;
+}
+
+
+/*Я только не понял как background выровнять */
+
+div.welcome {
+	background-image: url("../img/backgraund-plain.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	min-height: 518px;
+	position: relative;
+	margin-bottom: 66px;
+}
+
+.welcome-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 76px;
+	margin-bottom: 60px;
+}
+
+.white-blog {
+	display: block;
+	width: 100%;
+}
+
+.about-main-title {
+	width: 47%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 56px;
+}
+
+.about-title {
+	width: 33.33%;
+	text-align: center;
+}
+
+.about-image {
+	width: 66.66%;
+	max-height: 255px;
+}
+
+.features-item {
+	width: 33.33%;
+	min-height: 332px;
+	text-align: center;
+}
+
+.about-title {
+	min-height: 256px;
+}
+
+.about-down {
+	margin-bottom: 56px;
+}
+
+
+/* ПОЧЕМУ H2 пропадает ?*/
+
+.hotel-search-title {
+	width: 47%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 56px;
+}
+
+.hotel-search-map {
+	width: 47%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 500px;
+}
+
+
+/*как тут выравнивать элементы? */
+
+
+/*что делать с from?*/
+
+.tag {
+	width: 33.33%;
+}
+
+.social {
+	width: 33.33%;
+}
+
+< .footer-copyright {
+	width: 33.33%;
 }

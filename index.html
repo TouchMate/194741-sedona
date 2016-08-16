@@ -1,151 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-  <header class="main-header">
-  	<div class="conatiner">
-  		<a href="index.html">
-  			<img src="img/logo.png" width="137" height="70" alt="main-page">
-  		</a>
-  		<nav class="main-navigation">
-  			<ul>
-            <li>
-              <a href="#">ИНФОРМАЦИЯ</a>
-            </li>
-            <li>
-              <a href="#">ФОТО И ВИДЕО</a>
-            </li>
-            <li>
-              <a href="#">КАРТА ШТАТА</a>
-            </li>
-            <li>
-              <a href="#">ГОСТИНИЦЫ</a>
-            </li>
-			</ul>
-  		</nav>
-  	</div>
-  </header>
-  <main>
-  <img src="img/welcome.png" width="458" height="352" alt="welcome-to-sedona">
-  		<img class="intro-img" src="http://placehold.it/1200x773.jpg" width="1200" height="773" alt="welcome-sedona">
-  	<div class="abot-main-title">
-  		<h1>Седона — небольшой городок в Аризоне, 
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="conatiner">
+			<a href="index.html">
+				<img class="logo-top" src="img/logo.png" width="137" height="70" alt="main-page">
+			</a>
+			<nav class="main-navigation">
+				<ul class="main-navigation-list clearfix">
+					<li class="main-navigation-item">
+						<a class="main-navigation-link to-left" href="#">ИНФОРМАЦИЯ</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link to-left " href="#">ФОТО И ВИДЕО</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link to-right" href="#">КАРТА ШТАТА</a>
+					</li>
+					<li class="main-navigation-item">
+						<a class="main-navigation-link to-right" href="#">ГОСТИНИЦЫ</a>
+					</li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+
+		<!--		<мне кажется, что здесь лучше вставить две отдельные картинки для welcome and plain background. Это позволит надписи welcome всегда быть по центру при увеличение или уменьшение экрана>-->
+		<div class="welcome">
+			<img class="welcome-img" src="img/welcome-intro.png" width="458 " height="352 " alt="welcome-to-sedona ">
+
+			<!--			Белый блог я пытался поставить псевдо-элементом, но почему то у меня не вышло-->
+
+			<img class="white-blog" src="img/white-block.png" width:1200px height="57"> </div>
+
+		<div class="about-main-title">
+			<h1>Седона — небольшой городок в Аризоне, 
 заслуживающий большего!</h1>
- 	<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-  	</div>
-  	
-<!--  	about top-->
-  	<div class="about-top">
-  		<div class="about-title left">
-			<h2>НАСТОЯЩИЙ ГОРОДОК</h2>
-			<span>&#151; №1 &#151;</span>
-			<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-  		</div>
-        <img class="about-image right" src="img/about-image.jpg" width="800" height="256" alt="sedona-city">
-        </div> 
-	  
-<!--	  features  -->
-	  <div class="features">
-	  	<div class="features-item">
-	  		<i class="feature-item-image"></i>
-	  		<b>Жилье</b>
-	  		<p>Рекомендуем пожить в настоящем 
-	  		мотеле, все как в кино!</p>
-	  	</div>
-	  	<div class="features-item">
-	  		<i class="feature-item-image"></i>
-	  		<b>ЕДА</b>
-	  		<p>Всегда заказывайте фирменный бургер,
-			вы не разочаруетесь!</p>
-	  	</div>
-	  	<div class="features-item">
-	  		<i class="feature-item-image"></i>
-	  		<b>Сувениры</b>
-	  		<p>Не только китайского,
-	  		 но и местного производства!</p>
-	  	</div>
-	  </div>
-	  
-<!--	  about middle-->
-	 <div class="about-middle">
-        	<img class="about-image left" src="img/about-down-image.jpg" width="800" height="256" alt="sedona-city">
-	  	<div class="about-title rigth">
-			<h2>Там есть
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+		</div>
+
+		<!--  	about top-->
+		<div class="about-top clearfix">
+			<div class="about-title to-left ">
+				<h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+				<span>&#151; №1 &#151;</span>
+				<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+			</div>
+			<img class="about-image to-right " src="img/about-image.jpg " width="800 " height="256 " alt="sedona-city ">
+		</div>
+
+		<!--	  features  -->
+		<div class="features clearfix">
+			<div class="features-item to-left">
+				<i class="feature-item-image "></i>
+				<b>Жилье</b>
+				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			</div>
+			<div class="features-item to-left ">
+				<i class="feature-item-image "></i>
+				<b>ЕДА</b>
+				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+			</div>
+			<div class="features-item to-right ">
+				<i class="feature-item-image "></i>
+				<b>Сувениры</b>
+				<p>Не только китайского, но и местного производства!</p>
+			</div>
+		</div>
+
+		<!--	  about middle-->
+		<div class="about-middle clearfix ">
+			<img class="about-image to-left " src="img/about-down-image.jpg " width="800 " height="256 " alt="sedona-city ">
+			<div class="about-title to-right ">
+				<h2>Там есть
 			мост дьявола</h2>
-			<span>&#151; №2 &#151;</span>
-			<p>Да, по нему можно пройти! Если конечно
-			 вы осмелитесь
-			</p>
-  		</div>
-  	</div>
-  	<!--	  about down-->	
-  	<div class="about-down">
-  		<div class="about-title">
-			<h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-			<span>&#151; №3 &#151;</span>
-			<p>Все достопримечательности 
-			находятся очень близко</p>
-  		</div>
-  		<div class="about-title">
-			<h2>КРАСИВАЯ ДОРОГА</h2>
-			<span>&#151; №4 &#151;</span>
-			<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем 
-			НЕ СКУЧНО!</p>
-  		</div>
-  		<div class="about-title">
-			<h2>МАЛО ТУРИСТОВ</h2>
-			<span>&#151; №5 &#151;</span>
-			<p>Большинство едет в гранд каньон и
-			 толпится там</p>
-  		</div>
-    </div>
-<!--    search-->
-     <section class="hotel-search">
-     	<div class="hotel-search-title">
-     		<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-     		<p>Укажите предполагаемые даты поездки, 
-и мы покажем вам лучшие предложения гостиниц в седоне</p>
-     	</div>
-     	<div class="hotel-search-map"></div>
-		
-<!--    	form search-->
-    	  <a href="#" class="hotel-search-link">ПОИСК ГОСТИНИЦЫ В Седоне</a>
-     	
-     	<form class="hotel-search-form" action="#" method="post">
-     	<fieldset>
-     		<label>Дата заезда:
-     		<input type="date" name="arrive-date" value="24 Апреля 2016">
-     		</label>
-     		<label>Дата выезда:
-     		<input type="date" name="arrive-date" value="4 Июля 2016">
-     		</label>
-     		<label>Взрослые:
-     			<input type="number" name="number-adults" min="1" max="30" >
-     		</label>
-     		<label>Дети:
-     			<input type="number" name="number-kids" min="0" max="30" >
-     		</label>
-     		<input type="submit" name="search" value="Найти">
-     	</fieldset>
-     </form>
-     </section>
-    </main>
-    <footer>
-    	<div class="tag">
-    		<a href="#">#visitsedona</a>
-    	</div>
-    	<div class="social">
-    		<a href="#" class="social-item btn"><i></i></a>
-    		<a href="#" class="social-item btn"><i></i></a>
-    		<a href="#" class="social-item btn"><i></i></a>
-    	</div>
-    	 <div class="footer-copyright">
-          <a href="#">website by<img src="img/logo-academy.png"></a>
-        </div>
-    </footer>
-  </body>
+				<span>&#151; №2 &#151;</span>
+				<p>Да, по нему можно пройти! Если конечно вы осмелитесь
+				</p>
+			</div>
+		</div>
+		<!--	  about down-->
+		<div class="about-down clearfix">
+			<div class="about-title to-left ">
+				<h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+				<span>&#151; №3 &#151;</span>
+				<p>Все достопримечательности находятся очень близко</p>
+			</div>
+			<div class="about-title to-left ">
+				<h2>КРАСИВАЯ ДОРОГА</h2>
+				<span>&#151; №4 &#151;</span>
+				<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+			</div>
+			<div class="about-title to-left ">
+				<h2>МАЛО ТУРИСТОВ</h2>
+				<span>&#151; №5 &#151;</span>
+				<p>Большинство едет в гранд каньон и толпится там</p>
+			</div>
+		</div>
+		<!--    search-->
+		<section class="hotel-search ">
+			<div class="hotel-search-title ">
+				<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			</div>
+			<div class="hotel-search-map clearfix ">
+
+				<!--    	form search-->
+				<a href="# " class="hotel-search-link ">ПОИСК ГОСТИНИЦЫ В Седоне</a>
+
+				<form class="hotel-search-form " action="# " method="post ">
+					<fieldset>
+						<label>Дата заезда:
+							<input type="date " name="arrive-date " value="24 Апреля 2016 ">
+						</label>
+						<br>
+						<label>Дата выезда:
+							<input type="date " name="arrive-date " value="4 Июля 2016 ">
+						</label>
+						<br>
+						<label>Взрослые:
+							<input type="number " name="number-adults " min="1 " max="30 ">
+						</label>
+						<label>Дети:
+							<input type="number " name="number-kids " min="0 " max="30 ">
+						</label>
+						<br>
+						<input type="submit " name="search " value="Найти ">
+					</fieldset>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="clearfix">
+		<div class="tag to-left">
+			<a href="# ">#visitsedona</a>
+		</div>
+		<div class="social to-left">
+			<a href="# " class="social-item btn "><i>t</i></a>
+			<a href="# " class="social-item btn "><i>f</i></a>
+			<a href="# " class="social-item btn "><i>y</i></a>
+		</div>
+		<div class="footer-copyright to-right">
+			<a href="# ">website by<img src="img/logo-academy.png "></a>
+		</div>
+	</footer>
+</body>
+
 </html>

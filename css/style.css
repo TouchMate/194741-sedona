@@ -3,6 +3,7 @@ body {
 	font-size: 14px;
 	line-height: 21 px;
 	color: 333333;
+	text-transform: uppercase;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 h2 {
 	font-size: 21px;
 	font-weight: bold;
-	color: #ffffff;
+	color: black;
 }
 
 
@@ -30,13 +31,12 @@ h2 {
 	clear: both;
 }
 
-body {
+.wrapper {
 	position: relative;
 	max-width: 1200px;
 	min-width: 768px;
 	padding: 0;
 	margin: 0px auto;
-	text-transform: uppercase;
 	background-color: #fff;
 	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
 }
@@ -57,50 +57,43 @@ body {
 	padding: 0px;
 	list-style: none;
 	text-align: center;
-	width: 100%;
 }
 
-.main-navigation-list a {
+.main-navigation-list li {
 	/*	background-color: aqua;*/
 	width: 20%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
+.main-navigation-link {
+	text-decoration: none;
+}
 
-/*-------------------------main-----------------------*/
 
-
-/*<Почему 50% не выставляет по центру?>*/
+/*---------------------main-index-----------------------*/
 
 .logo-top {
 	position: absolute;
 	left: 50%;
 	z-index: 2;
+	margin-left: -70px;
 }
 
-
-/*Я только не понял как background выровнять */
-
-div.welcome {
-	background-image: url("../img/backgraund-plain.jpg");
-	background-position: 50% 50%;
+div.welcome-img {
+	background-image: url("../img/background.jpg");
+	background-position: 30% 20%;
 	background-repeat: no-repeat;
 	min-height: 518px;
 	position: relative;
 	margin-bottom: 66px;
-}
-
-.welcome-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 76px;
 	margin-bottom: 60px;
 }
 
 .white-blog {
 	display: block;
+	position: absolute;
+	top: 88.9%;
 	width: 100%;
 }
 
@@ -136,9 +129,6 @@ div.welcome {
 	margin-bottom: 56px;
 }
 
-
-/* ПОЧЕМУ H2 пропадает ?*/
-
 .hotel-search-title {
 	width: 47%;
 	text-align: center;
@@ -156,10 +146,104 @@ div.welcome {
 }
 
 
-/*как тут выравнивать элементы? */
+/*--------------Main-hotels----------------*/
+
+.filter-search {
+	min-height: 218px;
+	margin-bottom: 30px;
+	background-image: url(../img/backgraund-hotels.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 1200px auto;
+	padding-top: 30px;
+	padding-right: 6.08%;
+	padding-left: 6.08%;
+}
+
+.search-result {
+	min-height: 85px;
+	padding-right: 6.08%;
+	padding-left: 6.08%;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+	padding-top: 31px;
+}
+
+.search-result-number {
+	margin-right: 4.1%;
+}
+
+legend {
+	padding: 0;
+	display: table;
+	margin-bottom: 30px;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	min-width: 0;
+	display: block;
+	float: left;
+	width: 20%;
+}
+
+label {
+	display: block;
+	margin-bottom: 22px;
+}
+
+.search-result-preview {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: inline-block;
+	margin-right: 37.5%
+}
+
+.search-result-adjustment {
+	margin-right: 3.3%;
+}
+
+.search-result-preview li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.hotel {
+	padding-bottom: 30px;
+	padding-right: 6.08%;
+	padding-left: 6.08%;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+}
+
+.hotel-image {
+	margin-right: 2.5%;
+}
+
+.hotel-info {
+	width: 21.6%;
+	padding: 0;
+}
+
+.hotel-info h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+main {
+	margin-bottom: 35px;
+}
 
 
-/*что делать с from?*/
+/*-----------------Footer-----------------*/
+
+footer {
+	padding-right: 6.08%;
+	padding-left: 6.08%;
+}
 
 .tag {
 	width: 33.33%;

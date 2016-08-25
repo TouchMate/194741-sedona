@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -40,7 +41,10 @@
 					<img class="white-blog" src="img/white-block.png" width:1200px height="57">
 				</div>
 
-				<!--			Белый блог я пытался поставить псевдо-элементом, но почему то у меня не вышло-->
+				<!--Белый блог я пытался поставить псевдо-элементом, но почему то у меня не вышло,
+				
+				Как ты считаешь как лучше?-->
+
 
 			</div>
 
@@ -57,24 +61,27 @@
 					<span>&#151; №1 &#151;</span>
 					<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 				</div>
-				<img class="about-image to-right " src="img/about-image.jpg " width="800 " height="256 " alt="sedona-city ">
+
+				<!--Как ты считаешь, что лучше background-image или img?-->
+				<!--Я не смог выровнять отображение img, так как в photoshop. -->
+
+				<img class="about-image to-right" src="img/about-image.jpg " width="800 " height="260" alt="sedona-city ">
 			</div>
 
 			<!--	  features  -->
 			<div class="features clearfix">
 				<div class="features-item to-left">
-					<i class="feature-item-image "></i>
-					<b>Жилье</b>
+					<!--Я не уверен правильно ли я выронил icons т.к при уменьшение страницы icons немного расходиться с текстом.-->
+					<b class="feature-item-image house">Жилье</b>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
 				<div class="features-item to-left ">
-					<i class="feature-item-image "></i>
-					<b>ЕДА</b>
+					<b class="feature-item-image burger">ЕДА</b>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
 				<div class="features-item to-right ">
-					<i class="feature-item-image "></i>
-					<b>Сувениры</b>
+
+					<b class="feature-item-image gift">Сувениры</b>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</div>
@@ -112,31 +119,34 @@
 			<section class="hotel-search ">
 				<div class="hotel-search-title ">
 					<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<p>Укажите предполагаемые даты поездки,
+						<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				</div>
 				<div class="hotel-search-map clearfix ">
 
 					<!--    	form search-->
-					<a href="# " class="hotel-search-link ">ПОИСК ГОСТИНИЦЫ В Седоне</a>
+					<a href="# " class="btn-brown btn-hotel-search ">ПОИСК ГОСТИНИЦЫ В Седоне</a>
 
-					<form class="hotel-search-form " action="# " method="post ">
+					<form class="hotel-search-form" action="# " method="post ">
 						<fieldset>
-							<label>Дата заезда:
-								<input type="date " name="arrive-date " value="24 Апреля 2016 ">
+							<!--						Стилизация формы проблема, как задать стиль полям и как выравнивать?-->
+							<label for="arrive">
+								Дата заезда:
 							</label>
+							<input id="arrive" type="date" name="arrive-date " value="24 Апреля 2016 ">
 							<br>
-							<label>Дата выезда:
-								<input type="date " name="arrive-date " value="4 Июля 2016 ">
+							<label for="end">Дата выезда:
 							</label>
+							<input id="end" type="date" name="arrive-date " value="4 Июля 2016 ">
+
 							<br>
-							<label>Взрослые:
-								<input type="number " name="number-adults " min="1 " max="30 ">
-							</label>
-							<label>Дети:
-								<input type="number " name="number-kids " min="0 " max="30 ">
-							</label>
+							<label for="adults">Взрослые:</label>
+							<input id="adults" type="number " name="number-adults " min="1 " max="30 ">
+							<label for="kids">Дети:</label>
+							<input id="kids" type="number " name="number-kids " min="0 " max="30 ">
 							<br>
-							<input type="submit " name="search " value="Найти ">
+							<button class="btn-blue" type="submit " name="search " value="Найти ">Найти
+							</button>
 						</fieldset>
 					</form>
 				</div>
@@ -147,10 +157,11 @@
 				<a href="# ">#visitsedona</a>
 			</div>
 			<div class="social to-left">
-				<a href="# " class="social-item btn "><i>t</i></a>
-				<a href="# " class="social-item btn "><i>f</i></a>
-				<a href="# " class="social-item btn "><i>y</i></a>
+				<a href="# " class="social-item btn-blue-tw"><i>t</i></a>
+				<a href="# " class="social-item btn-blue-fb"><i>f</i></a>
+				<a href="# " class="social-item btn-blue-yt"><i>y</i></a>
 			</div>
+			<!--Как сделать перемену цвета в лого? Я думал через спарят но неуверен.-->
 			<div class="footer-copyright to-right">
 				<a href="# ">website by<img src="img/logo-academy.png "></a>
 			</div>

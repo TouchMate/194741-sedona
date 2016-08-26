@@ -51,13 +51,15 @@
 				<div class="about-title to-left ">
 					<h2>НАСТОЯЩИЙ ГОРОДОК</h2>
 					<span>&#151; №1 &#151;</span>
-					<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+					<p class="blue-content">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 				</div>
 
-				<!--Как ты считаешь, что лучше background-image или img?-->
-				<!--Я не смог выровнять отображение img, так как в photoshop. -->
-
-				<img class="about-image to-right" src="img/about-image.jpg " width="800 " height="260" alt="sedona-city ">
+				<!--Я вложил img в div и выронил изображение через css
+				& position. 
+				Вопрос, как быть с размерами в html. Оставить размер окна или изменить на размеры img? height=260-->
+				<div class="about-image to-right">
+					<img class="main-about-image" src="img/about-image.jpg " width="800 " height="260" alt="sedona-city ">
+				</div>
 			</div>
 
 			<!--	  features  -->
@@ -80,12 +82,14 @@
 
 			<!--	  about middle-->
 			<div class="about-middle clearfix ">
-				<img class="about-image to-left " src="img/about-down-image.jpg " width="800 " height="256 " alt="sedona-city ">
+				<div class="about-image to-left ">
+					<img class="second-about-image" src="img/about-down-image.jpg " width="800 " height="256 " alt="sedona-city ">
+				</div>
 				<div class="about-title to-right ">
-					<h2>Там есть
+					<h2>Там есть<br>
 			мост дьявола</h2>
 					<span>&#151; №2 &#151;</span>
-					<p>Да, по нему можно пройти! Если конечно вы осмелитесь
+					<p class="blue-content">Да, по нему можно пройти! Если конечно вы осмелитесь
 					</p>
 				</div>
 			</div>
@@ -94,17 +98,17 @@
 				<div class="about-title to-left ">
 					<h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
 					<span>&#151; №3 &#151;</span>
-					<p>Все достопримечательности находятся очень близко</p>
+					<p class="grey-content">Все достопримечательности находятся очень близко</p>
 				</div>
 				<div class="about-title to-left ">
 					<h2>КРАСИВАЯ ДОРОГА</h2>
 					<span>&#151; №4 &#151;</span>
-					<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+					<p class="grey-content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
 				</div>
 				<div class="about-title to-left ">
 					<h2>МАЛО ТУРИСТОВ</h2>
 					<span>&#151; №5 &#151;</span>
-					<p>Большинство едет в гранд каньон и толпится там</p>
+					<p class="grey-content">Большинство едет в гранд каньон и толпится там</p>
 				</div>
 			</div>
 			<!--    search-->
@@ -118,10 +122,11 @@
 
 					<!--    	form search-->
 					<a href="# " class="btn-brown btn-hotel-search ">ПОИСК ГОСТИНИЦЫ В Седоне</a>
+					<div class="map"></div>
 
 					<form class="hotel-search-form" action="# " method="post ">
 						<fieldset>
-							<!--						Стилизация формы проблема, как задать стиль полям и как выравнивать?-->
+
 							<label for="arrive">
 								Дата заезда:
 							</label>

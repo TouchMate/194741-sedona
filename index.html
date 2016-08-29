@@ -53,19 +53,18 @@
 					<span>&#151; №1 &#151;</span>
 					<p class="blue-content">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 				</div>
-
-				<!--Я вложил img в div и выронил изображение через css
-				& position. 
-				Вопрос, как быть с размерами в html. Оставить размер окна или изменить на размеры img? height=260-->
 				<div class="about-image to-right">
-					<img class="main-about-image" src="img/about-image.jpg " width="800 " height="260" alt="sedona-city ">
+					<img class="main-about-image" src="img/about-image.jpg " width="800 " height="401" alt="sedona-city ">
 				</div>
 			</div>
 
 			<!--	  features  -->
 			<div class="features clearfix">
 				<div class="features-item to-left">
-					<!--Я не уверен правильно ли я выронил icons т.к при уменьшение страницы icons немного расходиться с текстом.-->
+
+					<!--Как быть с выравнивание icons, мне кажется тут надо изменить разметку в html. 
+Посоветуй как лучше выровнять?-->
+
 					<b class="feature-item-image house">Жилье</b>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
@@ -83,7 +82,7 @@
 			<!--	  about middle-->
 			<div class="about-middle clearfix ">
 				<div class="about-image to-left ">
-					<img class="second-about-image" src="img/about-down-image.jpg " width="800 " height="256 " alt="sedona-city ">
+					<img class="second-about-image" src="img/about-down-image.jpg " width="800 " height="400 " alt="sedona-city ">
 				</div>
 				<div class="about-title to-right ">
 					<h2>Там есть<br>
@@ -154,12 +153,16 @@
 				<a href="# ">#visitsedona</a>
 			</div>
 			<div class="social to-left">
+				<!--При изменений размеров страницы social boxes залазят друг на друга. Что делать? -->
 				<a href="# " class="social-item btn-blue-tw"><i>t</i></a>
 				<a href="# " class="social-item btn-blue-fb"><i>f</i></a>
 				<a href="# " class="social-item btn-blue-yt"><i>y</i></a>
 			</div>
-			<div class="footer-copyright to-right">
-				<a href="# ">website by<i class="html-academy"></i></a>
+			<div class="copy-right to-right">
+				<span>WEBSITE BY</span>
+				<a class="academy-logo-grey" href="# ">
+					<span class="hide">html Academy</span>
+				</a>
 			</div>
 		</footer>
 	</div>

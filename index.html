@@ -24,10 +24,10 @@
 							<a class="main-navigation-link" href="#">ФОТО И ВИДЕО</a>
 						</li>
 						<li class="main-navigation-item to-right">
-							<a class="main-navigation-link" href="#">КАРТА ШТАТА</a>
+							<a class="main-navigation-link" href="hotels.html">ГОСТИНИЦЫ</a>
 						</li>
 						<li class="main-navigation-item to-right">
-							<a class="main-navigation-link" href="#">ГОСТИНИЦЫ</a>
+							<a class="main-navigation-link" href="#">КАРТА ШТАТА</a>
 						</li>
 
 					</ul>
@@ -62,8 +62,6 @@
 			<div class="features clearfix">
 				<div class="features-item to-left">
 
-					<!--Как быть с выравнивание icons, мне кажется тут надо изменить разметку в html. 
-Посоветуй как лучше выровнять?-->
 
 					<b class="feature-item-image house">Жилье</b>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -121,45 +119,61 @@
 
 					<!--    	form search-->
 					<a href="# " class="btn-brown btn-hotel-search ">ПОИСК ГОСТИНИЦЫ В Седоне</a>
+
 					<div class="map"></div>
 
 					<form class="hotel-search-form" action="# " method="post ">
-						<fieldset>
 
-							<label for="arrive">
-								Дата заезда:
-							</label>
-							<input id="arrive" type="date" name="arrive-date " value="24 Апреля 2016 ">
-							<br>
-							<label for="end">Дата выезда:
-							</label>
-							<input id="end" type="date" name="arrive-date " value="4 Июля 2016 ">
 
-							<br>
-							<label for="adults">Взрослые:</label>
-							<input id="adults" type="number " name="number-adults " min="1 " max="30 ">
-							<label for="kids">Дети:</label>
-							<input id="kids" type="number " name="number-kids " min="0 " max="30 ">
-							<br>
-							<button class="btn-blue" type="submit " name="search " value="Найти ">Найти
+
+						<fieldset class="search-table">
+							<div class="form-date-box">
+								<label class="form-check-label" for="arrive">
+									Дата заезда:
+								</label>
+								<input class="form-field" id="arrive" type="text" name="arrive-date " value="24 Апреля 2016 ">
+								<a class="clendar-btn" href="#"></a>
+							</div>
+							<div class="form-date-box">
+								<label class="form-check-label" for="end">Дата выезда:
+								</label>
+
+								<input class="form-field" id="end" type="text" name="arrive-date " value="4 Июля 2016 ">
+								<a class="clendar-btn" href=""></a>
+							</div>
+							<div class="form-date-box">
+								<div class="form-box-adult to-left">
+									<label class="form-check-label" for="adults">Взрослые:</label>
+									<a class="munis-btn" href=""></a>
+									<input class="number-field" id="adults" type="number" name="number-adults " min="1 " max="30" value="3">
+									<a class="plus-btn" href="#"></a>
+								</div>
+								<div class="form-box-kids to-right">
+									<label class="form-check-kids" for="kids">Дети:</label>
+									<a class="munis-btn" href=""></a>
+									<input id="kids" type="number" class="number-field" id="kids" type="text" name="number-kids " min="0 " max="30" value="0">
+									<a class="plus-btn" href="#"></a>
+								</div>
+							</div>
+							<button class="btn-blue btn-search" type="submit " name="search " value="Найти ">Найти
 							</button>
 						</fieldset>
 					</form>
 				</div>
 			</section>
-		</main>
+		</main>		
+
 		<footer class="clearfix">
 			<div class="tag to-left">
 				<a href="# ">#visitsedona</a>
 			</div>
 			<div class="social to-left">
-				<!--При изменений размеров страницы social boxes залазят друг на друга. Что делать? -->
 				<a href="# " class="social-item btn-blue-tw"><i>t</i></a>
 				<a href="# " class="social-item btn-blue-fb"><i>f</i></a>
 				<a href="# " class="social-item btn-blue-yt"><i>y</i></a>
 			</div>
 			<div class="copy-right to-right">
-				<span>WEBSITE BY</span>
+				<span class="web">WEBSITE BY</span>
 				<a class="academy-logo-grey" href="# ">
 					<span class="hide">html Academy</span>
 				</a>

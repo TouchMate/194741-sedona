@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
-	<link rel="stulesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +19,7 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation-list clearfix">
 						<li class="main-navigation-item to-left">
-							<a class="main-navigation-link" href="#">ИНФОРМАЦИЯ</a>
+							<a class="main-navigation-link active" href="index.html">ИНФОРМАЦИЯ</a>
 						</li>
 						<li class="main-navigation-item to-left">
 							<a class="main-navigation-link" href="#">ФОТО И ВИДЕО</a>
@@ -47,7 +47,7 @@
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			</div>
 
-			<!--  	about top-->
+
 			<div class="about-top clearfix">
 				<div class="about-title to-left ">
 					<h2>НАСТОЯЩИЙ ГОРОДОК</h2>
@@ -55,11 +55,11 @@
 					<p class="blue-content">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 				</div>
 				<div class="about-image to-right">
-					<img class="main-about-image" src="img/about-image.jpg " width="800 " height="401" alt="sedona-city ">
+					<img class="main-about-image" src="img/about-image.jpg " width="800 " height="401" alt="sedona-city">
 				</div>
 			</div>
 
-			<!--	  features  -->
+
 			<div class="features clearfix">
 				<div class="features-item to-left">
 
@@ -78,10 +78,10 @@
 				</div>
 			</div>
 
-			<!--	  about middle-->
+
 			<div class="about-middle clearfix ">
 				<div class="about-image to-left ">
-					<img class="second-about-image" src="img/about-down-image.jpg " width="800 " height="400 " alt="sedona-city ">
+					<img class="second-about-image" src="img/about-down-image.jpg " width="800 " height="400" alt="sedona-city">
 				</div>
 				<div class="about-title to-right ">
 					<h2>Там есть<br>
@@ -91,7 +91,7 @@
 					</p>
 				</div>
 			</div>
-			<!--	  about down-->
+
 			<div class="about-down clearfix">
 				<div class="about-title to-left ">
 					<h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
@@ -109,7 +109,7 @@
 					<p class="grey-content">Большинство едет в гранд каньон и толпится там</p>
 				</div>
 			</div>
-			<!--    search-->
+
 			<section class="hotel-search ">
 				<div class="hotel-search-title ">
 					<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
@@ -118,12 +118,13 @@
 				</div>
 				<div class="hotel-search-map clearfix ">
 
-					<!--    	form search-->
-					<a href="# " class="btn-brown btn-hotel-search ">ПОИСК ГОСТИНИЦЫ В Седоне</a>
 
-					<div class="map"></div>
+					<a href="#" class="btn-brown btn-hotel-search ">ПОИСК ГОСТИНИЦЫ В Седоне</a>
 
-					<form class="hotel-search-form" action="# " method="post ">
+					<div class="map" id="map-canvas"></div>
+					<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
+					<form class="hotel-search-form" action="# " method="post">
 
 
 
@@ -145,18 +146,19 @@
 							<div class="form-date-box">
 								<div class="form-box-adult to-left">
 									<label class="form-check-label" for="adults">Взрослые:</label>
-									<a class="munis-btn" href=""></a>
-									<input class="number-field" id="adults" type="number" name="number-adults " min="1 " max="30" value="3">
+									<a class="munis-btn" href="#"></a>
+									<input class="number-field" id="adults" type="text" name="number-adults " value="3">
 									<a class="plus-btn" href="#"></a>
 								</div>
 								<div class="form-box-kids to-right">
 									<label class="form-check-kids" for="kids">Дети:</label>
-									<a class="munis-btn" href=""></a>
-									<input id="kids" type="number" class="number-field" name="number-kids " min="0 " max="30" value="0">
+									<a class="munis-btn" href="#"></a>
+									<input id="kids" type="text" class="number-field" name="number-kids" value="0">
 									<a class="plus-btn" href="#"></a>
+
 								</div>
 							</div>
-							<button class="btn-blue btn-search" type="submit " name="search " value="Найти ">Найти
+							<button class="btn-blue btn-search" type="submit " name="search " value="Найти">Найти
 							</button>
 						</fieldset>
 					</form>
@@ -164,7 +166,7 @@
 			</section>
 		</main>
 
-		<footer class="clearfix">
+		<footer class="footer-main clearfix">
 			<div class="tag to-left">
 				<a href="# ">#visitsedona</a>
 			</div>
@@ -181,6 +183,50 @@
 			</div>
 		</footer>
 	</div>
+
+
+	<script>
+		var link = document.querySelector(".btn-hotel-search");
+		var popup = document.querySelector(".hotel-search-form");
+		var close = document.querySelector(".hotel-search-form-show");
+
+		link.addEventListener("click", function (event) {
+			event.preventDefault();
+			popup.classList.toggle("hotel-search-form-show");
+		});
+
+		close.addEventListener("click", function (event) {
+			event.preventDefault();
+			popup.classList.toggle("hotel-search-form");
+		});
+
+		window.addEventListener("keydown", function (event) {
+			if (event.keyCode === 27) {
+				if (popup.classList.contains("hotel-search-form-shown")) {
+					popup.classList.remove("hotel-search-form-show");
+				}
+			}
+		});
+	</script>
+
+	<script>
+		function initialize() {
+			var mapOptions = {
+				zoom: 9,
+				center: new
+				google.maps.LatLng(34.873256, -111.756747)
+			}
+			var map = new google.maps.Map(document.getElementById('map-canvas'),
+				mapOptions);
+
+			var myLatLng = new google.maps.LatLng(34.873256, -111.756747);
+			var beachMarker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+			});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 </body>
 
 </html>

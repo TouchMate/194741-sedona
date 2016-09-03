@@ -1,516 +1,9 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-
-
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
-
-html {
-	font-family: sans-serif;
-	/* 1 */
-	-ms-text-size-adjust: 100%;
-	/* 2 */
-	-webkit-text-size-adjust: 100%;
-	/* 2 */
-}
-
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
-
-body {
-	margin: 0;
-}
-
-
-/* HTML5 display definitions
-   ========================================================================== */
-
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
- */
-
-article,
-aside,
-details,
-
-/* 1 */
-
-figcaption,
-figure,
-footer,
-header,
-main,
-
-/* 2 */
-
-menu,
-nav,
-section,
-summary {
-	/* 1 */
-	display: block;
-}
-
-
-/**
- * Add the correct display in IE 9-.
- */
-
-audio,
-canvas,
-progress,
-video {
-	display: inline-block;
-}
-
-
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-	vertical-align: baseline;
-}
-
-
-/**
- * Add the correct display in IE 10-.
- * 1. Add the correct display in IE.
- */
-
-template,
-
-/* 1 */
-
-[hidden] {
-	display: none;
-}
-
-
-/* Links
-   ========================================================================== */
-
-
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
-a {
-	background-color: transparent;
-	/* 1 */
-	-webkit-text-decoration-skip: objects;
-	/* 2 */
-}
-
-
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-
-a:active,
-a:hover {
-	outline-width: 0;
-}
-
-
-/* Text-level semantics
-   ========================================================================== */
-
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-	border-bottom: none;
-	/* 1 */
-	text-decoration: underline;
-	/* 2 */
-	text-decoration: underline dotted;
-	/* 2 */
-}
-
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
-b,
-strong {
-	font-weight: inherit;
-}
-
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-	font-weight: bolder;
-}
-
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-
-dfn {
-	font-style: italic;
-}
-
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-	background-color: #ff0;
-	color: #000;
-}
-
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-	font-size: 80%;
-}
-
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
-sup {
-	top: -0.5em;
-}
-
-
-/* Embedded content
-   ========================================================================== */
-
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
-img {
-	border-style: none;
-}
-
-
-/**
- * Hide the overflow in IE.
- */
-
-svg:not(:root) {
-	overflow: hidden;
-}
-
-
-/* Grouping content
-   ========================================================================== */
-
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-	font-family: monospace, monospace;
-	/* 1 */
-	font-size: 1em;
-	/* 2 */
-}
-
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-	margin: 1em 40px;
-}
-
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-	box-sizing: content-box;
-	/* 1 */
-	height: 0;
-	/* 1 */
-	overflow: visible;
-	/* 2 */
-}
-
-
-/* Forms
-   ========================================================================== */
-
-
-/**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-select,
-textarea {
-	font: inherit;
-	/* 1 */
-	margin: 0;
-	/* 2 */
-}
-
-
-/**
- * Restore the font weight unset by the previous rule.
- */
-
-optgroup {
-	font-weight: bold;
-}
-
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input {
-	/* 1 */
-	overflow: visible;
-}
-
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select {
-	/* 1 */
-	text-transform: none;
-}
-
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-html [type="button"],
-
-/* 1 */
-
-[type="reset"],
-[type="submit"] {
-	-webkit-appearance: button;
-	/* 2 */
-}
-
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-	outline: 1px dotted ButtonText;
-}
-
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-
-fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
-}
-
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-	box-sizing: border-box;
-	/* 1 */
-	color: inherit;
-	/* 2 */
-	display: table;
-	/* 1 */
-	max-width: 100%;
-	/* 1 */
-	padding: 0;
-	/* 3 */
-	white-space: normal;
-	/* 1 */
-}
-
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-
-textarea {
-	overflow: auto;
-}
-
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-
-[type="checkbox"],
-[type="radio"] {
-	box-sizing: border-box;
-	/* 1 */
-	padding: 0;
-	/* 2 */
-}
-
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-	height: auto;
-}
-
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-	-webkit-appearance: textfield;
-	/* 1 */
-	outline-offset: -2px;
-	/* 2 */
-}
-
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
- */
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-
-
-/**
- * Correct the text style of placeholders in Chrome, Edge, and Safari.
- */
-
-::-webkit-input-placeholder {
-	color: inherit;
-	opacity: 0.54;
-}
-
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-	-webkit-appearance: button;
-	/* 1 */
-	font: inherit;
-	/* 2 */
-}
-
 body {
 	margin: 0;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 21px;
-	color: 333333;
+	color: #333333;
 	text-transform: uppercase;
 }
 
@@ -550,9 +43,6 @@ img {
 	float: right;
 }
 
-
-/*----------------------header----------------------*/
-
 .main-navigation-list {
 	margin: 0px;
 	padding: 0px;
@@ -561,7 +51,6 @@ img {
 }
 
 .main-navigation-list li {
-	/*	background-color: aqua;*/
 	width: 20%;
 	padding-top: 16px;
 	padding-bottom: 13px;
@@ -575,9 +64,6 @@ img {
 	color: #000000;
 	vertical-align: top;
 }
-
-
-/*---------------------main-index-----------------------*/
 
 .logo-top {
 	position: absolute;
@@ -727,10 +213,11 @@ div.welcome-img::after {
 	margin-left: auto;
 	/*	min-height: 500px;*/
 	position: relative;
+	height: 680px;     /*  <--test-->*/
+	
+	
+	
 }
-
-
-/*--------------Main-hotels----------------*/
 
 .filter-search {
 	margin-bottom: 30px;
@@ -877,14 +364,13 @@ input[type="checkbox"]+label.disabled:after {
 	margin-bottom: 0px;
 }
 
-
-/*-----------------Footer-----------------*/
-
 footer {
 	text-align: center;
 	vertical-align: middle;
 	background-color: #ffffff;
 	box-sizing: border-box;
+	
+
 }
 
 .tag {
@@ -908,13 +394,10 @@ footer {
 	width: 33.33%;
 	text-align: center;
 	vertical-align: baseline;
-	padding: 47.5px 21.6px;
+	padding: 40px 20px;
 	box-sizing: border-box;
 	position: relative;
 }
-
-
-/*----------sprite------------*/
 
 .sprite {
 	background-image: url(spritesheet.png);
@@ -1120,9 +603,6 @@ footer {
 	background-position: -10px -1357px;
 }
 
-
-/*---------------end-of-sprite-------------------*/
-
 .features-item p {
 	max-width: 305px;
 	margin-right: auto;
@@ -1179,7 +659,7 @@ footer {
 .hotel-search-form {
 	box-sizing: border-box;
 	background-color: #ffffff;
-	display: block;
+	display: none;
 	margin-left: -284px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
@@ -1205,8 +685,8 @@ footer {
 
 .social-item {
 	display: inline-block;
-	width: 43px;
-	height: 43px;
+	width: 45px;
+	height: 45px;
 	margin: 0 2px;
 	font-size: 0;
 	vertical-align: top;
@@ -1284,12 +764,18 @@ footer {
 }
 
 .map {
-	background-image: url("../img/map.png");
+	/*	background-image: url("../img/map.png");*/
 	width: 1200px;
-	min-height: 475px;
-	position: relative;
+	height: 593px;
+	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.map iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 
 .about-main-title h1 {
@@ -1387,8 +873,8 @@ footer {
 	height: 39px;
 	background-position: -10px -1188px;
 	display: inline-block;
-	top: 35%;
-	left: 60%;
+	top: 0%;
+	left: 0%;
 }
 
 .copy-right>span {
@@ -1482,9 +968,6 @@ footer {
 	margin-bottom: 30px;
 }
 
-
-/*------------form-main-page-----------*/
-
 .form-date-box {
 	height: 38px;
 	vertical-align: top;
@@ -1493,7 +976,7 @@ footer {
 }
 
 .form-field {
-	width: 346px;
+	width: 344px;
 	display: inline-block;
 }
 
@@ -1502,7 +985,7 @@ footer {
 }
 
 .form-check-label {
-	width: 108px;
+	width: 104px;
 	display: inline-block;
 }
 
@@ -1514,7 +997,7 @@ footer {
 }
 
 div.form-date-box:nth-child(3) {
-	margin-bottom: 54px;
+	margin-bottom: 53px;
 }
 
 .hotel-search-form input[type="text"] {
@@ -1528,6 +1011,7 @@ div.form-date-box:nth-child(3) {
 	font-family: "PT Sans", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
+	box-sizing: border-box;
 }
 
 .hotel-search-form input[type="text"]:hover {
@@ -1538,8 +1022,8 @@ div.form-date-box:nth-child(3) {
 	background-color: #ffffff;
 }
 
-.form-box-adult input[type="number"],
-.form-box-kids input[type="number"] {
+.form-box-adult input[type="text"],
+.form-box-kids input[type="text"] {
 	height: 38px;
 	background-color: #f2f2f2;
 	border: none;
@@ -1552,6 +1036,8 @@ div.form-date-box:nth-child(3) {
 	box-sizing: border-box;
 	padding-left: 55px;
 }
+
+.form-box-adult>a {}
 
 .btn-search {
 	border: none;
@@ -1566,7 +1052,7 @@ div.form-date-box:nth-child(3) {
 
 .search-table {
 	background-color: #ffffff;
-	padding: 56px 50px;
+	padding: 56px;
 	box-sizing: border-box;
 }
 
@@ -1577,11 +1063,11 @@ div.form-date-box:nth-child(3) {
 	background-position: -10px -490px;
 	position: absolute;
 	top: 50%;
-	right: 20px;
+	right: 5px;
 	transform: translate(0, -50%);
 }
 
-d .clendar-btn:hover {
+.clendar-btn:hover {
 	width: 21px;
 	height: 22px;
 	background-position: -10px -532px;
@@ -1604,53 +1090,50 @@ d .clendar-btn:hover {
 }
 
 .plus-btn {
-	width: 11px;
-	height: 11px;
+	width: 38px;
+	height: 38px;
 	background: url("../img/sprite.png");
-	background-position: -10px -889px;
+	background-position: 3px -876px;
 	position: absolute;
 	top: 50%;
-	right: 20px;
+	right: 0;
 	transform: translate(0, -50%);
 }
 
 .plus-btn:hover {
-	width: 11px;
-	height: 11px;
-	background-position: -10px -920px;
+	width: 38px;
+	height: 38px;
+	background-position: 3px -938px;
 }
 
 .plus-btn:active {
-	width: 11px;
-	height: 11px;
-	background-position: -10px -951px;
+	width: 38px;
+	height: 38px;
+	background-position: 3px -907px;
 }
 
 .munis-btn {
-	width: 12px;
-	height: 3px;
 	background: url("../img/sprite.png");
-	background-position: -10px -820px;
+	background-position: 4px -802px;
 	position: absolute;
 	top: 50%;
-	left: 130px;
+	left: 110px;
 	transform: translate(0, -50%);
+	width: 38px;
+	height: 38px;
 }
 
 .munis-btn:hover {
-	width: 12px;
-	height: 3px;
-	background-position: -10px -866px;
+	width: 38px;
+	height: 38px;
+	background-position: 3px -848px;
 }
 
 .minus-btn:active {
-	width: 12px;
-	height: 3px;
-	background-position: -10px -843px;
+	width: 38px;
+	height: 38px;
+	background-position: 3px -827px;
 }
-
-
-/*------------------end-of-main-form--------------------*/
 
 .search-result-direction {
 	float: right;
@@ -1793,4 +1276,31 @@ a.hotel-link:active .hotel-link:active {
 
 .filter-range-title {
 	margin-left: -5px;
+}
+
+
+/*_________js______________*/
+
+.hotel-search-form-show {
+	display: block;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	margin-left: -284px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	text-align: left;
+	color: 333333;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	left: 50%;
+	top: 86px;
+	width: 568px;
+	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+}
+.footer-main {
+	margin-top: -120px;
+	opacity: 0.75;
+
 }

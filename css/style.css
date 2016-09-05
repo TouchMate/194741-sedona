@@ -110,6 +110,7 @@ div.welcome-img::after {
 	width: 33.33%;
 	text-align: center;
 	min-height: 256px;
+	
 }
 
 .about-top,
@@ -182,7 +183,7 @@ div.welcome-img::after {
 
 .about-image {
 	width: 66.66%;
-	max-height: 255px;
+	max-height: 256px;
 	overflow: hidden;
 }
 

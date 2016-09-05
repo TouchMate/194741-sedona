@@ -110,7 +110,6 @@ div.welcome-img::after {
 	width: 33.33%;
 	text-align: center;
 	min-height: 256px;
-	
 }
 
 .about-top,
@@ -766,7 +765,7 @@ footer {
 }
 
 .map {
-	/*	background-image: url("../img/map.png");*/
+	background-image: url("../img/map.png");
 	width: 1200px;
 	height: 593px;
 	position: absolute;
@@ -1319,4 +1318,12 @@ a.hotel-link:active .hotel-link:active {
 .hotel-search-form-show {
 	display: block;
 	animation: slide 1.2s;
+}
+
+.js .map {
+	background-image: none;
+}
+
+.no-js .hotel-search-form {
+	display: block;
 }

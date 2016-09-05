@@ -74,7 +74,7 @@ img {
 
 div.welcome-img {
 	background-image: url("../img/sedona-welcome-main.jpg");
-	background-position: 30% 20%;
+	background-position: center;
 	background-repeat: no-repeat;
 	min-height: 509px;
 	position: relative;

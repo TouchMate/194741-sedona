@@ -133,32 +133,38 @@
 								<label class="form-check-label" for="arrive">
 									Дата заезда:
 								</label>
-								<input class="form-field" id="arrive" type="text" name="arrive-date" value="24 Апреля 2016 ">
+								<input required class="form-field" id="arrive" type="text" name="arrive-date" value="24 Апреля 2016 ">
+
+
 								<a class="clendar-btn" href="#"></a>
 							</div>
 							<div class="form-date-box">
 								<label class="form-check-label" for="end">Дата выезда:
 								</label>
 
-								<input class="form-field" id="end" type="text" name="arrive-date " value="4 Июля 2016 ">
+								<input required class="form-field" id="end" type="text" name="end-date" value="4 Июля 2016 ">
+
+
+
+
 								<a class="clendar-btn" href=""></a>
 							</div>
 							<div class="form-date-box">
 								<div class="form-box-adult to-left">
 									<label class="form-check-label" for="adults">Взрослые:</label>
 									<a class="munis-btn" href="#"></a>
-									<input class="number-field" id="adults" type="text" name="number-adults " value="3">
+									<input required class="number-field" id="adults" type="text" name="number-adults " value="3">
 									<a class="plus-btn" href="#"></a>
 								</div>
 								<div class="form-box-kids to-right">
 									<label class="form-check-kids" for="kids">Дети:</label>
 									<a class="munis-btn" href="#"></a>
-									<input id="kids" type="text" class="number-field" name="number-kids" value="0">
+									<input required id="kids" type="text" class="number-field" name="number-kids" value="0">
 									<a class="plus-btn" href="#"></a>
 
 								</div>
 							</div>
-							<button class="btn-blue btn-search" type="submit " name="search " value="Найти">Найти
+							<button class="btn-blue btn-search" type="submit" name="search " value="Найти">Найти
 							</button>
 						</fieldset>
 					</form>
@@ -189,12 +195,22 @@
 		var link = document.querySelector(".btn-hotel-search");
 		var popup = document.querySelector(".hotel-search-form");
 		var close = document.querySelector(".hotel-search-form-show");
-		var lodin = popup.querySelector("[name="
-			arrive - date "]")
+
+
+
+
+		var checkIn = popup.querySelector("[name=arrive-date]");
+		var checkOut = popup.querySelector("[name=end-date]");
+
+		var adultsNumber = popup.querySelector("[name=number-adults]");
+		var kidsNumber = popup.querySelector("[name=number-kids]");
+
 
 		link.addEventListener("click", function (event) {
 			event.preventDefault();
 			popup.classList.toggle("hotel-search-form-show");
+			checkIn.focus();
+
 		});
 
 		close.addEventListener("click", function (event) {
@@ -204,12 +220,14 @@
 
 		window.addEventListener("keydown", function (event) {
 			if (event.keyCode === 27) {
-				if (popup.classList.contains("hotel-search-form-shown")) {
+				if (popup.classList.contains("hotel-search-form-show")) {
 					popup.classList.remove("hotel-search-form-show");
 				}
 			}
 		});
 	</script>
+
+
 
 	<script>
 		function initialize() {

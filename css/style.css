@@ -1281,14 +1281,41 @@ a.hotel-link:active .hotel-link:active {
 	margin-left: -4px;
 }
 
+.footer-main {
+	margin-top: -120px;
+	opacity: 0.9;
+}
+
+@keyframes slide {
+	0% {
+		opacity: 0.1;
+		transform: translateY(505px);
+	}
+	20% {
+		opacity: 0.2;
+	}
+	40% {
+		opacity: 0.4;
+	}
+	60% {
+		opacity: 0.6;
+	}
+	70% {
+		opacity: 0.7;
+	}
+	90% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0.9;
+		transform: translateY(0px);
+	}
+}
+
 
 /*_________js______________*/
 
 .hotel-search-form-show {
 	display: block;
-}
-
-.footer-main {
-	margin-top: -120px;
-	opacity: 0.9;
+	animation: slide 1.2s;
 }

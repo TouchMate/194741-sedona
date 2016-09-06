@@ -282,15 +282,12 @@ input[type="checkbox"]+label {
 input[type="checkbox"]+label::before {
 	content: "";
 	display: block;
-	width: 16.9px;
-	height: 16.9px;
-	/*	background-image: url("../img/sprite.png");*/
-	/*	background-repeat: no-repeat;*/
-	/*	width: 22px;*/
-	/*	height: 22px;*/
-	/*		background-position: -10px -778px;*/
+	background-image: url("../img/sprite-icon.png");
+	background-repeat: no-repeat;
+	width: 22px;
+	height: 22px;
+	background-position: -10px -136px;
 	border-radius: 5px;
-	border: 2px solid #ffffff;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -302,22 +299,36 @@ input[type="checkbox"]:checked+label::after {
 	display: block;
 	top: 0px;
 	left: 0px;
-	background-image: url("../img/sprite.png");
+	background-image: url("../img/sprite-icon.png");
 	background-repeat: no-repeat;
 	width: 26px;
 	height: 22px;
-	background-position: -10px -616px;
+	background-position: -10px -94px;
 }
 
-input[type="checkbox"]+label:disabled:after,
-input[type="checkbox"]+label.disabled:after {
+input[type="checkbox"]:disabled+label:after,
+input[type="checkbox"].disabled+label:after {
 	content: "";
 	display: block;
-	width: 16.9px;
-	height: 16.9px;
-	border-radius: 5px;
-	border: 2px solid #6a6a6a;
 	position: absolute;
+	background-image: url("../img/sprite-icon.png");
+	background-repeat: no-repeat;
+	width: 22px;
+	height: 22px;
+	background-position: -10px -52px;
+	top: 0;
+	left: 0;
+}
+
+input[type="checkbox"]:checked:disabled+label:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/sprite-icon.png");
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 22px;
+	background-position: -10px -10px;
 	top: 0;
 	left: 0;
 }
@@ -603,6 +614,45 @@ footer {
 	height: 17px;
 	background-position: -10px -1357px;
 }
+
+
+/*-----sprite-sheet-end----------*/
+
+
+/*-------sprite-icon-----------*/
+
+.sprite {
+	background-image: url(spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.sprite-check-box-cheched-disabled {
+	width: 26px;
+	height: 22px;
+	background-position: -10px -10px;
+}
+
+.sprite-check-box-disabled {
+	width: 22px;
+	height: 22px;
+	background-position: -10px -52px;
+}
+
+.sprite-icon-checkbox-checked {
+	width: 26px;
+	height: 22px;
+	background-position: -10px -94px;
+}
+
+.sprite-icon-empty-box {
+	width: 22px;
+	height: 22px;
+	background-position: -10px -136px;
+}
+
+
+/*------------sprite-icon-end------*/
 
 .features-item p {
 	max-width: 305px;

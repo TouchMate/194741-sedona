@@ -1,27 +1,31 @@
+body,
+legend {
+	line-height: 21px
+}
+
 body {
 	margin: 0;
-	font-size: 14px;
+	font-family: "PT Sans", "Arial", sans-serif;
 	color: #333;
 	text-transform: uppercase;
-	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px
 }
 
 h1 {
-	font-family: inherit;
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: 700;
+	font-weight: 700
 }
 
 img {
 	max-width: 100%;
-	height: auto;
+	height: auto
 }
 
 .clearfix:after {
 	content: "";
 	display: table;
-	clear: both;
+	clear: both
 }
 
 .wrapper {
@@ -31,15 +35,15 @@ img {
 	padding: 0;
 	margin: 0 auto;
 	background-color: #fff;
-	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
 }
 
 .to-left {
-	float: left;
+	float: left
 }
 
 .to-right {
-	float: right;
+	float: right
 }
 
 .main-navigation-list {
@@ -61,14 +65,14 @@ img {
 	font-size: 14px;
 	font-weight: 700;
 	color: #000;
-	vertical-align: top;
+	vertical-align: top
 }
 
 .logo-top {
 	position: absolute;
 	left: 50%;
 	z-index: 2;
-	margin-left: -70px;
+	margin-left: -70px
 }
 
 div.welcome-img {
@@ -76,12 +80,12 @@ div.welcome-img {
 	background-position: center -52px;
 	background-repeat: no-repeat;
 	min-height: 509px;
-	margin-bottom: 60px;
+	margin-bottom: 60px
 }
 
 div.welcome,
 div.welcome-img {
-	position: relative;
+	position: relative
 }
 
 div.welcome-img::after {
@@ -93,7 +97,7 @@ div.welcome-img::after {
 	bottom: 0%;
 	display: block;
 	width: 100%;
-	height: 57px;
+	height: 57px
 }
 
 .about-main-title {
@@ -101,36 +105,36 @@ div.welcome-img::after {
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 55px;
+	margin-bottom: 55px
 }
 
 .about-title {
 	width: 33.33%;
 	text-align: center;
-	min-height: 256px;
+	min-height: 256px
 }
 
 .about-middle,
 .about-top {
 	background: #81b3d2;
-	color: #fff;
+	color: #fff
 }
 
 .about-title h2 {
 	max-width: 150px;
 	margin: 52px auto 22.5px;
-	color: #fff;
+	color: #fff
 }
 
 .about-down .about-title h2 {
 	color: #000;
-	margin-top: 47px;
+	margin-top: 47px
 }
 
 .about-middle .about-title p {
 	margin-top: 20px;
 	max-width: 305px;
-	padding: 0 20px;
+	padding: 0 20px
 }
 
 .feature-item-image {
@@ -140,72 +144,71 @@ div.welcome-img::after {
 	line-height: 21px;
 	font-weight: 700;
 	margin: 82px auto 20px;
-	text-align: center;
+	text-align: center
 }
 
 .feature-item-image::before {
 	content: "";
 	position: absolute;
 	top: 57px;
-	background: url(../img/sprite.png);
+	background: url(../img/sprite.png)
 }
 
 .feature-item-image.house::before {
 	width: 75px;
 	height: 72px;
 	background-position: -10px -398px;
-	margin-left: -5px;
+	margin-left: -5px
 }
 
 .feature-item-image.burger::before {
 	width: 74px;
 	height: 70px;
 	background-position: -10px -212px;
-	margin-left: -20px;
+	margin-left: -20px
 }
 
 .feature-item-image.gift::before {
 	width: 64px;
 	height: 76px;
 	background-position: -10px -302px;
-	margin-left: 18px;
+	margin-left: 18px
 }
 
 .about-image {
 	width: 66.66%;
 	max-height: 256px;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .features-item {
 	width: 33.33%;
 	min-height: 332px;
 	text-align: center;
-	position: relative;
+	position: relative
 }
 
 .about-down {
 	margin-bottom: 56px;
-	background: #eee;
+	background: #eee
 }
 
 .hotel-search-map,
 .hotel-search-title {
 	text-align: center;
 	margin-right: auto;
-	;
 	margin-left: auto
 }
 
 .hotel-search-title {
 	margin-bottom: 50px;
-	width: 47%;
+	width: 47%
 }
 
 .hotel-search-map {
 	width: 100%;
 	position: relative;
-	height: 680px;
+	height: 680px
 }
 
 .filter-search {
@@ -217,7 +220,7 @@ div.welcome-img::after {
 	padding-right: 6%;
 	padding-left: 6%;
 	min-height: 217px;
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .search-result {
@@ -225,7 +228,7 @@ div.welcome-img::after {
 	max-height: 87px;
 	padding: 33.5px 6% 33.55px;
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 27px;
+	margin-bottom: 27px
 }
 
 .search-result-number {
@@ -233,48 +236,43 @@ div.welcome-img::after {
 	line-height: 26px;
 	font-size: 21px;
 	font-weight: 700;
-	display: inline-block;
-}
-
-body,
-input[type=checkbox]+label,
-legend {
-	line-height: 21px;
+	display: inline-block
 }
 
 legend {
 	padding: 0;
 	display: table;
-	font-size: 16px;
+	font-size: 16px
 }
 
 fieldset {
 	border: 0;
-	padding: 0;
+	padding: 0
 }
 
 .search-features {
 	width: 20%;
-	margin-right: 4%;
+	margin-right: 4%
 }
 
 .search-aparment {
-	width: 20%;
+	width: 20%
 }
 
 input[type=checkbox] {
-	display: none;
+	display: none
 }
 
 input[type=checkbox]+label {
 	display: block;
 	margin: 23px 0 23px -2px;
 	font-size: 14px;
+	line-height: 21px;
 	padding-left: 39px;
 	position: relative;
 	cursor: pointer;
 	text-align: left;
-	vertical-align: baseline;
+	vertical-align: baseline
 }
 
 input[type=checkbox]+label::before {
@@ -288,7 +286,7 @@ input[type=checkbox]+label::before {
 	border-radius: 5px;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0
 }
 
 input[type=checkbox]:checked+label::after {
@@ -301,7 +299,7 @@ input[type=checkbox]:checked+label::after {
 	background-repeat: no-repeat;
 	width: 26px;
 	height: 22px;
-	background-position: -10px -94px;
+	background-position: -10px -94px
 }
 
 input[type=checkbox].disabled+label:after,
@@ -315,7 +313,7 @@ input[type=checkbox]:disabled+label:after {
 	height: 22px;
 	background-position: -10px -52px;
 	top: 0;
-	left: 0;
+	left: 0
 }
 
 input[type=checkbox]:checked:disabled+label:after {
@@ -328,7 +326,7 @@ input[type=checkbox]:checked:disabled+label:after {
 	height: 22px;
 	background-position: -10px -10px;
 	top: 0;
-	left: 0;
+	left: 0
 }
 
 .search-preview,
@@ -336,25 +334,25 @@ input[type=checkbox]:checked:disabled+label:after {
 	font-size: 12px;
 	line-height: 18px;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: top
 }
 
 .search-preview {
 	margin: 0;
 	list-style: none;
-	padding: 3px 0 0;
+	padding: 3px 0 0
 }
 
 .search-result-adjustment {
 	margin-right: 3.3%;
-	padding-top: 3px;
+	padding-top: 3px
 }
 
 .search-preview li {
 	display: inline-block;
 	margin-right: 40px;
 	vertical-align: middle;
-	padding-left: 1px;
+	padding-left: 1px
 }
 
 .hotel {
@@ -362,23 +360,23 @@ input[type=checkbox]:checked:disabled+label:after {
 	padding-right: 6%;
 	padding-left: 6%;
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 25px;
+	margin-bottom: 25px
 }
 
 .hotel-image {
 	margin-right: 2.8%;
-	margin-top: 5px;
+	margin-top: 5px
 }
 
 .hotel-info {
 	width: 33.33%;
 	padding: 0;
-	min-width: 265px;
+	min-width: 265px
 }
 
 .hotel-info h1 {
 	padding: 0;
-	margin: 0;
+	margin: 0
 }
 
 .copy-right,
@@ -386,7 +384,7 @@ input[type=checkbox]:checked:disabled+label:after {
 .tag,
 footer {
 	text-align: center;
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 footer {
@@ -396,67 +394,67 @@ footer {
 
 .tag {
 	vertical-align: baseline;
-	padding: 47.5px 1.8%;
+	padding: 47.5px 1.8%
 }
 
 .copy-right,
 .social,
 .tag {
-	width: 33.33%;
+	width: 33.33%
 }
 
 .social {
 	padding-top: 36px;
 	padding-bottom: 36px;
-	vertical-align: middle;
+	vertical-align: middle
 }
 
 .copy-right {
 	vertical-align: baseline;
 	padding: 40px 20px;
-	position: relative;
+	position: relative
 }
 
 .sprite-academy-logo-blue {
 	width: 113px;
 	height: 39px;
-	background-position: -10px -10px;
+	background-position: -10px -10px
 }
 
 .sprite-academy-logo-grey {
 	width: 113px;
 	height: 39px;
-	background-position: -10px -69px;
+	background-position: -10px -69px
 }
 
 .sprite-feature-item-burger {
 	width: 74px;
 	height: 70px;
-	background-position: -10px -212px;
+	background-position: -10px -212px
 }
 
 .sprite-feature-item-gift {
 	width: 64px;
 	height: 76px;
-	background-position: -10px -302px;
+	background-position: -10px -302px
 }
 
 .sprite-feature-item-house {
 	width: 75px;
 	height: 72px;
-	background-position: -10px -398px;
+	background-position: -10px -398px
 }
 
 .sprite-icon-calendar {
 	width: 21px;
 	height: 22px;
-	background-position: -10px -490px;
+	background-position: -10px -490px
 }
 
 .sprite-icon-calendar-blue {
 	width: 21px;
 	height: 22px;
-	background-position: -10px -532px;
+	background-position: -10px -532px
 }
 
 .sprite-icon-calendar-hvr {
@@ -1227,13 +1225,14 @@ a.hotel-link:hover {
 }
 
 .price-controls input {
-	width: 40%;
+	width: 47%;
 	margin: 0;
 	font: inherit;
 	background: 0 0;
 	border: none;
 	outline: none;
 	font-size: 14px;
+	line-height: 14px;
 	color: #fff
 }
 

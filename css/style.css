@@ -1294,7 +1294,7 @@ a.hotel-link:active .hotel-link:active {
 }
 
 .price-controls input {
-	width: 40%;
+	width: 47%;
 	margin: 0;
 	color: inherit;
 	font: inherit;
@@ -1302,6 +1302,7 @@ a.hotel-link:active .hotel-link:active {
 	border: none;
 	outline: none;
 	font-size: 14px;
+	line-height: 14px;
 	color: #ffffff;
 }
 

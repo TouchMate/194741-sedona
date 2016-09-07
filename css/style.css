@@ -8,10 +8,11 @@ body {
 }
 
 h1 {
-	font: inherit;
+	font-family: inherit;
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: 700;
+	font-weight: bold;
+	
 }
 
 img {
@@ -110,7 +111,6 @@ div.welcome-img::after {
 	width: 33.33%;
 	text-align: center;
 	min-height: 256px;
-	
 }
 
 .about-top,
@@ -136,8 +136,6 @@ div.welcome-img::after {
 .about-middle .about-title p {
 	margin-top: 20px;
 	max-width: 305px;
-	margin-right: auto;
-	margin-left: auto;
 	padding: 0 20px;
 }
 
@@ -186,7 +184,6 @@ div.welcome-img::after {
 	width: 66.66%;
 	max-height: 256px;
 	overflow: hidden;
-	
 }
 
 .features-item {
@@ -221,7 +218,6 @@ div.welcome-img::after {
 }
 
 .filter-search {
-	margin-bottom: 29px;
 	background-image: url(../img/backgraund-hotels.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -229,14 +225,19 @@ div.welcome-img::after {
 	padding-top: 31px;
 	padding-right: 6.0%;
 	padding-left: 6.0%;
+	min-height:217px;
+	box-sizing: border-box;
 }
 
 .search-result {
-	min-height: 58px;
+	box-sizing: border-box;
+	max-height: 87px;
 	padding-right: 6%;
 	padding-left: 6%;
+	padding-top: 33.5px;
+	padding-bottom: 33.55px;
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 25px;
+		margin-bottom: 27px;
 }
 
 .search-result-number {
@@ -250,23 +251,24 @@ div.welcome-img::after {
 legend {
 	padding: 0;
 	display: table;
-	font: "PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 21px;
 }
 
 fieldset {
 	border: 0;
+	padding: 0px;
 }
 
 .search-features {
 	width: 20%;
-	margin-right: 3%;
-	padding: 0px;
+	margin-right: 4%;
 }
 
 .search-aparment {
 	width: 20%;
+	
 }
 
 input[type="checkbox"] {
@@ -275,11 +277,16 @@ input[type="checkbox"] {
 
 input[type="checkbox"]+label {
 	display: block;
-	margin: 22px 0;
+	margin: 23px 0;
+	margin-left: -2px;
+	font-size: 14px;
 	line-height: 21px;
-	padding-left: 40px;
+	padding-left: 39px;
 	position: relative;
 	cursor: pointer;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-align: left;
+	vertical-align: baseline;
 }
 
 input[type="checkbox"]+label::before {
@@ -362,11 +369,12 @@ input[type="checkbox"]:checked:disabled+label:after {
 	padding-right: 6%;
 	padding-left: 6%;
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .hotel-image {
 	margin-right: 2.8%;
+	margin-top: 5px;
 }
 
 .hotel-info {
@@ -379,6 +387,7 @@ input[type="checkbox"]:checked:disabled+label:after {
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 0px;
+	
 }
 
 footer {
@@ -837,16 +846,18 @@ footer {
 }
 
 .blue-content {
-	width: 305px;
+	width: 76%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .grey-content {
-	width: 280px;
+/*	width: 280px;*/
+	width:70%; 
 	margin-top: 20px;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 0 20px;
 }
 
 .hotel-search-title h2 {
@@ -860,6 +871,7 @@ footer {
 	text-decoration: none;
 	color: #cacaca;
 	border-bottom: 1px dashed #81b3d2;
+	margin-right: -10px;
 }
 
 .search-result-btn:hover {
@@ -897,24 +909,31 @@ footer {
 .hotel-info-type {
 	margin-right: 3px;
 	display: inline-block;
-	margin-bottom: 17px;
+	margin-bottom: 15px;
 	width: 110px;
+	vertical-align: baseline;
+	padding-top: 5px;
+
 }
 
 .hotel-info-price {
 	display: inline-block;
 	width: 144px;
+	padding-top: 5px;
 }
 
 .hotel-rating {
 	display: block;
 	bottom: -60px;
-	padding: 5px 15px;
+	padding: 4.5px 15px;
 	background-color: #f2f2f2;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .hotel-rating-box {
 	position: relative;
+	padding-top: 3px;
 }
 
 .hotel:last-child {
@@ -935,6 +954,7 @@ footer {
 	vertical-align: top;
 	display: inline-block;
 	padding: 5px;
+	padding-top: 7px;
 }
 
 .copy-right .academy-logo-grey:hover {
@@ -986,7 +1006,7 @@ footer {
 	width: 11px;
 	height: 10px;
 	background-position: -10px -1128px;
-	margin-right: 0.5%;
+	margin-right: 7px;
 }
 
 .search-result-up:hover {
@@ -1014,10 +1034,11 @@ footer {
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	background-position: -10px -1357px;
+	margin-left: 2px;
 }
 
 .hotel-rating-stars {
-	min-height: 20px;
+	min-height: 21px;
 	direction: rtl;
 	margin-bottom: 39px;
 }
@@ -1060,7 +1081,7 @@ div.form-date-box:nth-child(3) {
 	border: none;
 	color: #000000;
 	text-transform: uppercase;
-	padding: 0 40px 0 25px;
+	padding: 0 40px 0 12px;
 	box-sizing: border-box;
 	font-family: "PT Sans", sans-serif;
 	font-weight: bold;
@@ -1192,14 +1213,16 @@ div.form-date-box:nth-child(3) {
 
 .search-result-direction {
 	float: right;
-	width: 30px;
+	width: 40px;
 	display: inline-block;
 	direction: rtl;
+
 }
 
 .hotel-link {
 	text-decoration: none;
 	color: #333333;
+	
 }
 
 a.hotel-link:hover {
@@ -1217,14 +1240,15 @@ a.hotel-link:active .hotel-link:active {
 
 .hotels-search-form {
 	color: #ffffff;
+/*	padding-bottom: 15px;*/
 }
 
 .filter-range {
-	
 	width: 30%;
 	color: #ffffff;
 	text-transform: uppercase;
 	box-sizing: border-box;
+	padding-top: 6px;
 }
 
 .price-controls {
@@ -1254,23 +1278,37 @@ a.hotel-link:active .hotel-link:active {
 	line-height: 38px;
 	vertical-align: top;
 	cursor: pointer;
-}
-
-.price-controls .min-price,
-.price-controls .max-price {
-	padding-left: 21%;
 	width: 50%;
+	padding-left: 61px;
+	padding-top: 5px;
+	line-height: 32px;
+	vertical-align: top;
+	cursor: pointer;
 	box-sizing: border-box;
 }
 
-.price-controls input {
+.price-controls .min-price {
+	padding-left: 21%;
 	width: 50%;
+	/*	box-sizing: border-box;*/
+}
+
+.price-controls .max-price {
+	padding-left: 17%;
+	width: 50%;
+	/*	box-sizing: border-box;*/
+}
+
+.price-controls input {
+	width: 40%;
 	margin: 0;
 	color: inherit;
 	font: inherit;
 	background: none;
 	border: none;
 	outline: none;
+	font-size: 14px;
+	color: #ffffff;
 }
 
 .range-controls {
@@ -1326,6 +1364,7 @@ a.hotel-link:active .hotel-link:active {
 	border-radius: 2px;
 	outline: none;
 	cursor: pointer;
+	margin-right: 92px;
 }
 
 .btn-transparent:hover {
@@ -1334,7 +1373,7 @@ a.hotel-link:active .hotel-link:active {
 }
 
 .filter-range-title {
-	margin-left: -15px;
+	margin-left: -8px;
 }
 
 .footer-main {
@@ -1382,4 +1421,7 @@ a.hotel-link:active .hotel-link:active {
 
 .no-js .hotel-search-form {
 	display: block;
+}
+.left {
+	padding-top: 7px;
 }

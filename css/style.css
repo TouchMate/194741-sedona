@@ -54,6 +54,7 @@ img {
 	width: 20%;
 	padding-top: 16px;
 	padding-bottom: 13px;
+	
 }
 
 .main-navigation-link {
@@ -74,7 +75,7 @@ img {
 
 div.welcome-img {
 	background-image: url("../img/sedona-welcome-main.jpg");
-	background-position: center -50px;
+	background-position: center -52px;
 	background-repeat: no-repeat;
 	min-height: 509px;
 	position: relative;
@@ -140,7 +141,7 @@ div.welcome-img::after {
 
 .feature-item-image {
 	display: block;
-	padding-top: 82px;
+	padding-top: 81px;
 	margin-top: 82px;
 	margin-bottom: 20px;
 	font-size: 21px;
@@ -154,7 +155,7 @@ div.welcome-img::after {
 .feature-item-image::before {
 	content: "";
 	position: absolute;
-	top: 55px;
+	top: 57px;
 	background: url("../img/sprite.png");
 }
 
@@ -348,6 +349,8 @@ input[type="checkbox"]:checked:disabled+label:after {
 	list-style: none;
 	font-size: 12px;
 	line-height: 18px;
+	vertical-align: top;
+	padding-top: 3px;
 }
 
 .search-result-adjustment {
@@ -355,11 +358,19 @@ input[type="checkbox"]:checked:disabled+label:after {
 	font-size: 12px;
 	line-height: 18px;
 	display: inline-block;
+	vertical-align: top;
+	padding-top: 3px;
+
+	
 }
 
 .search-preview li {
 	display: inline-block;
 	margin-right: 40px;
+	vertical-align: middle;
+
+	padding-left: 1px;
+	
 }
 
 .hotel {
@@ -1274,11 +1285,12 @@ a.hotel-link:active .hotel-link:active {
 	cursor: pointer;
 	width: 50%;
 	padding-left: 61px;
-	padding-top: 5px;
+	padding-top: 2px;
 	line-height: 32px;
 	vertical-align: top;
 	cursor: pointer;
 	box-sizing: border-box;
+	
 }
 
 .price-controls .min-price {
@@ -1347,8 +1359,10 @@ a.hotel-link:active .hotel-link:active {
 
 .btn-transparent {
 	display: block;
-	margin: 0 auto;
-	padding: 6px 35px;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:33px;
+	padding-right: 30px;
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
@@ -1358,7 +1372,11 @@ a.hotel-link:active .hotel-link:active {
 	border-radius: 2px;
 	outline: none;
 	cursor: pointer;
-	margin-right: 92px;
+	margin: 0 auto;
+/*	box-sizing: border-box;*/
+/*	width: 130px;*/
+	
+	
 }
 
 .btn-transparent:hover {

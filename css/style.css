@@ -12,7 +12,6 @@ h1 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	
 }
 
 img {
@@ -225,7 +224,7 @@ div.welcome-img::after {
 	padding-top: 31px;
 	padding-right: 6.0%;
 	padding-left: 6.0%;
-	min-height:217px;
+	min-height: 217px;
 	box-sizing: border-box;
 }
 
@@ -237,7 +236,7 @@ div.welcome-img::after {
 	padding-top: 33.5px;
 	padding-bottom: 33.55px;
 	border-bottom: 1px solid #e5e5e5;
-		margin-bottom: 27px;
+	margin-bottom: 27px;
 }
 
 .search-result-number {
@@ -268,7 +267,6 @@ fieldset {
 
 .search-aparment {
 	width: 20%;
-	
 }
 
 input[type="checkbox"] {
@@ -387,7 +385,6 @@ input[type="checkbox"]:checked:disabled+label:after {
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 0px;
-	
 }
 
 footer {
@@ -852,8 +849,8 @@ footer {
 }
 
 .grey-content {
-/*	width: 280px;*/
-	width:70%; 
+	/*	width: 280px;*/
+	width: 70%;
 	margin-top: 20px;
 	margin-right: auto;
 	margin-left: auto;
@@ -913,7 +910,6 @@ footer {
 	width: 110px;
 	vertical-align: baseline;
 	padding-top: 5px;
-
 }
 
 .hotel-info-price {
@@ -1216,13 +1212,11 @@ div.form-date-box:nth-child(3) {
 	width: 40px;
 	display: inline-block;
 	direction: rtl;
-
 }
 
 .hotel-link {
 	text-decoration: none;
 	color: #333333;
-	
 }
 
 a.hotel-link:hover {
@@ -1240,7 +1234,7 @@ a.hotel-link:active .hotel-link:active {
 
 .hotels-search-form {
 	color: #ffffff;
-/*	padding-bottom: 15px;*/
+	/*	padding-bottom: 15px;*/
 }
 
 .filter-range {
@@ -1407,9 +1401,6 @@ a.hotel-link:active .hotel-link:active {
 	}
 }
 
-
-/*_________js______________*/
-
 .hotel-search-form-show {
 	display: block;
 	animation: slide 1.2s;
@@ -1422,6 +1413,7 @@ a.hotel-link:active .hotel-link:active {
 .no-js .hotel-search-form {
 	display: block;
 }
+
 .left {
 	padding-top: 7px;
 }

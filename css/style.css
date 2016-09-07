@@ -8,7 +8,6 @@ body {
 }
 
 h1 {
-	font-family: inherit;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -54,7 +53,6 @@ img {
 	width: 20%;
 	padding-top: 16px;
 	padding-bottom: 13px;
-	
 }
 
 .main-navigation-link {
@@ -251,7 +249,6 @@ div.welcome-img::after {
 legend {
 	padding: 0;
 	display: table;
-	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -283,7 +280,6 @@ input[type="checkbox"]+label {
 	padding-left: 39px;
 	position: relative;
 	cursor: pointer;
-	font-family: "PT Sans", "Arial", sans-serif;
 	text-align: left;
 	vertical-align: baseline;
 }
@@ -360,17 +356,13 @@ input[type="checkbox"]:checked:disabled+label:after {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 3px;
-
-	
 }
 
 .search-preview li {
 	display: inline-block;
 	margin-right: 40px;
 	vertical-align: middle;
-
 	padding-left: 1px;
-	
 }
 
 .hotel {
@@ -732,7 +724,6 @@ footer {
 	background-color: #ffffff;
 	display: none;
 	margin-left: -284px;
-	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	text-align: left;
@@ -1090,7 +1081,6 @@ div.form-date-box:nth-child(3) {
 	text-transform: uppercase;
 	padding: 0 40px 0 12px;
 	box-sizing: border-box;
-	font-family: "PT Sans", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	box-sizing: border-box;
@@ -1112,7 +1102,6 @@ div.form-date-box:nth-child(3) {
 	color: #000000;
 	text-transform: uppercase;
 	box-sizing: border-box;
-	font-family: "PT Sans", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	box-sizing: border-box;
@@ -1290,7 +1279,6 @@ a.hotel-link:active .hotel-link:active {
 	vertical-align: top;
 	cursor: pointer;
 	box-sizing: border-box;
-	
 }
 
 .price-controls .min-price {
@@ -1359,9 +1347,9 @@ a.hotel-link:active .hotel-link:active {
 
 .btn-transparent {
 	display: block;
-	padding-top:6px;
-	padding-bottom:6px;
-	padding-left:33px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 33px;
 	padding-right: 30px;
 	font-size: 14px;
 	line-height: 20px;
@@ -1373,10 +1361,8 @@ a.hotel-link:active .hotel-link:active {
 	outline: none;
 	cursor: pointer;
 	margin: 0 auto;
-/*	box-sizing: border-box;*/
-/*	width: 130px;*/
-	
-	
+	/*	box-sizing: border-box;*/
+	/*	width: 130px;*/
 }
 
 .btn-transparent:hover {

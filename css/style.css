@@ -154,28 +154,35 @@ div.welcome-img::after {
 	content: "";
 	position: absolute;
 	top: 57px;
-	background: url("../img/sprite.png");
+	left: 50%;
+	/*	left: calc(50% -34px);*/
+	width: 76px;
+	/*	background-position: 0 50%;*/
+	background: url("../img/sprite.png") no-repeat;
 }
 
 .feature-item-image.house::before {
-	width: 75px;
+	/*	width: 75px;*/
+	/*		margin-left: -5px;*/
+	margin-left: -39px;
 	height: 72px;
 	background-position: -10px -398px;
-	margin-left: -5px;
 }
 
 .feature-item-image.burger::before {
-	width: 74px;
+	/*	width: 74px;*/
+	/*	margin-left: -20px;*/
+	margin-left: -38px;
 	height: 70px;
 	background-position: -10px -212px;
-	margin-left: -20px;
 }
 
 .feature-item-image.gift::before {
-	width: 64px;
+	/*	width: 64px;*/
+	/*	margin-left: 18px;*/
+	margin-left: -33px;
 	height: 76px;
 	background-position: -10px -302px;
-	margin-left: 18px;
 }
 
 .about-image {

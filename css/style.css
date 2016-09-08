@@ -72,6 +72,7 @@ img {
 }
 
 div.welcome-img {
+	background: #81b3d2;
 	background-image: url("../img/sedona-welcome-main.jpg");
 	background-position: center -52px;
 	background-repeat: no-repeat;
@@ -223,6 +224,7 @@ div.welcome-img::after {
 }
 
 .filter-search {
+	background-color: 81b3d2;
 	background-image: url(../img/backgraund-hotels.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;

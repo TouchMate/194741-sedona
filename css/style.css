@@ -156,31 +156,23 @@ div.welcome-img::after {
 	position: absolute;
 	top: 57px;
 	left: 50%;
-	/*	left: calc(50% -34px);*/
 	width: 76px;
-	/*	background-position: 0 50%;*/
 	background: url("../img/sprite.png") no-repeat;
 }
 
 .feature-item-image.house::before {
-	/*	width: 75px;*/
-	/*		margin-left: -5px;*/
 	margin-left: -39px;
 	height: 72px;
 	background-position: -10px -398px;
 }
 
 .feature-item-image.burger::before {
-	/*	width: 74px;*/
-	/*	margin-left: -20px;*/
 	margin-left: -38px;
 	height: 70px;
 	background-position: -10px -212px;
 }
 
 .feature-item-image.gift::before {
-	/*	width: 64px;*/
-	/*	margin-left: 18px;*/
 	margin-left: -33px;
 	height: 76px;
 	background-position: -10px -302px;
@@ -217,10 +209,8 @@ div.welcome-img::after {
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	/*	min-height: 500px;*/
 	position: relative;
 	height: 680px;
-	/*  <--test-->*/
 }
 
 .filter-search {
@@ -861,7 +851,6 @@ footer {
 }
 
 .grey-content {
-	/*	width: 280px;*/
 	width: 70%;
 	margin-top: 20px;
 	margin-right: auto;
@@ -1119,8 +1108,6 @@ div.form-date-box:nth-child(3) {
 	line-height: 21px;
 }
 
-.form-box-adult>a {}
-
 .btn-search {
 	border: none;
 	width: 100%;
@@ -1247,7 +1234,6 @@ a.hotel-link:active .hotel-link:active {
 
 .hotels-search-form {
 	color: #ffffff;
-	/*	padding-bottom: 15px;*/
 }
 
 .filter-range {
@@ -1298,13 +1284,11 @@ a.hotel-link:active .hotel-link:active {
 .price-controls .min-price {
 	padding-left: 21%;
 	width: 50%;
-	/*	box-sizing: border-box;*/
 }
 
 .price-controls .max-price {
 	padding-left: 17%;
 	width: 50%;
-	/*	box-sizing: border-box;*/
 }
 
 .price-controls input {
@@ -1376,8 +1360,6 @@ a.hotel-link:active .hotel-link:active {
 	outline: none;
 	cursor: pointer;
 	margin: 0 auto;
-	/*	box-sizing: border-box;*/
-	/*	width: 130px;*/
 }
 
 .btn-transparent:hover {
